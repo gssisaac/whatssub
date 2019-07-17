@@ -16,21 +16,13 @@ exports[`[Temp] render renders without crashing 1`] = `
     ]
   }
 >
-  <View
-    accessible={true}
-    isTVSelectable={true}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
+  <Text
     style={
       Object {
-        "opacity": 1,
+        "color": "rgba(255,255,255,07)",
+        "fontSize": 20,
       }
     }
-    testID="btn"
   >
     <View
       style={

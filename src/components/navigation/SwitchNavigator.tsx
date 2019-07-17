@@ -25,7 +25,7 @@ const SwitchNavigator: NavigationContainer = createSwitchNavigator(
     MainEmpty,
   },
   {
-    initialRouteName: 'AuthLoadingScreen',
+    initialRouteName: 'TempScreen',
   },
 );
 
