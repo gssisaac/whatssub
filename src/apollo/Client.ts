@@ -1,5 +1,5 @@
 // import ApolloClient from 'apollo-boost';
-import { ROOT_URL } from '../apis/config';
+import { GRAPHQL_URL } from '../apis/url';
 import { defaults, resolvers } from './LocalState';
 import cookie from 'js-cookie';
 
@@ -8,14 +8,14 @@ import { WebSocketLink } from 'apollo-link-ws';
 import { getMainDefinition } from 'apollo-utilities';
 
 const httpLink = new HttpLink({
-  uri: `${ROOT_URL}`,
+  uri: `${GRAPHQL_URL}`,
   headers: {
     authorization: `Bearer ${cookie.get('token')}`,
   },
 });
 
 const wsLink = new WebSocketLink({
-  uri: `ws://${ROOT_URL}`,
+  uri: `ws://${GRAPHQL_URL}`,
   options: { reconnect: true },
 });
 
