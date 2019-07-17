@@ -1,5 +1,5 @@
 // import ApolloClient from 'apollo-boost';
-import { GRAPHQL_URL } from '../apis/url';
+import { GRAPHQL_URL } from '../apis/urls';
 import { defaults, resolvers } from './LocalState';
 import cookie from 'js-cookie';
 
