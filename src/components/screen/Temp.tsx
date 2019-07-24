@@ -49,7 +49,11 @@ const Users = () => {
 
   return (
     <FlatList
-      contentContainerStyle={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}
+      contentContainerStyle={{
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+      }}
       data={data.users ? data.users : []}
       keyExtractor={ (item: User) => String(item.id) }
       renderItem={({ item }) => <Text style={{

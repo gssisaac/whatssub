@@ -24,39 +24,7 @@ exports[`[Temp] render renders without crashing 1`] = `
       }
     }
   >
-    <View
-      style={
-        Array [
-          Object {
-            "alignItems": "center",
-            "alignSelf": "center",
-            "backgroundColor": "#023059",
-            "borderColor": "#023059",
-            "borderRadius": 4,
-            "borderWidth": 2,
-            "height": 52,
-            "justifyContent": "center",
-            "width": 320,
-          },
-          Object {
-            "backgroundColor": "#333333",
-          },
-        ]
-      }
-    >
-      <Text
-        style={
-          Array [
-            Object {
-              "color": "#000000",
-              "fontSize": 14,
-            },
-          ]
-        }
-      >
-        Go Back
-      </Text>
-    </View>
-  </View>
+    Loading...
+  </Text>
 </View>
 `;
