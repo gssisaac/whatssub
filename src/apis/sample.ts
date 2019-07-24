@@ -1,4 +1,4 @@
-import { API_URL } from './urls';
+import { ROOT_URL } from './urls';
 
 export const sample =
   async (body: object, signal?: AbortController['signal']) => {

@@ -1,10 +1,9 @@
 // import ApolloClient from 'apollo-boost';
-import { GRAPHQL_URL } from '../apis/urls';
+import { ApolloClient, HttpLink, InMemoryCache, split } from 'apollo-boost';
 import { defaults, resolvers } from './LocalState';
-import cookie from 'js-cookie';
-
-import { ApolloClient, HttpLink, split, InMemoryCache } from 'apollo-boost';
+import { GRAPHQL_URL } from '../apis/urls';
 import { WebSocketLink } from 'apollo-link-ws';
+import cookie from 'js-cookie';
 import { getMainDefinition } from 'apollo-utilities';
 
 const httpLink = new HttpLink({
