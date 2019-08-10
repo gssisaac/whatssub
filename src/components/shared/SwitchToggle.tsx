@@ -26,6 +26,7 @@ function StyledSwitchToggle({ onPress, ...props }: Props) {
         height: 21.7,
         borderRadius: 10.9,
         padding: 1.1,
+        marginRight: 21,
       }}
       circleStyle={{
         width: 19.6,

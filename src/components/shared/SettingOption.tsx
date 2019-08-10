@@ -10,7 +10,7 @@ const Container = styled.View`
   align-items: center;
   background-color: white;
 
-  height: 50px;
+  height: 69px;
 
   padding: 0 16px;
 `;
@@ -19,6 +19,7 @@ const Label = styled.Text`
   font-size: 16;
   color: rgb(50, 59, 67);
   letter-spacing: -0.5;
+  margin-left: 24px;
 `;
 
 interface Props {
