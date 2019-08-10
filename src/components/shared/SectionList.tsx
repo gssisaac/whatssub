@@ -35,6 +35,7 @@ const SectionEmptyHeader = styled.View`
 
 const SectionHeader = styled(SectionEmptyHeader)`
   height: 36px;
+  padding-left: 20px;
 `;
 
 const SectionHeaderText = styled.Text`

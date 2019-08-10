@@ -28,7 +28,7 @@ const SwitchNavigator: NavigationContainer = createSwitchNavigator(
     MainEmpty,
   },
   {
-    initialRouteName: 'ScreenDetail',
+    initialRouteName: 'MainStackNavigator',
   },
 );
 

@@ -8,7 +8,7 @@ import SwitchToggle from '../shared/SwitchToggle';
 import { getString } from '../../../STRINGS';
 import styled from 'styled-components/native';
 
-const Container = styled.View`
+const Container = styled.SafeAreaView`
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -30,8 +30,7 @@ const UnHighlightedText = styled.Text`
 `;
 
 const RegisterButton = styled(Button)`
-  height: 48px;
-  font-size: 16;
+  height: 58px;
   background-color: rgb(64, 127, 255);
   margin-left: 20px;
   margin-right: 20px;
@@ -47,6 +46,7 @@ interface IProps {
 }
 
 function Page(props: IProps) {
+  const [serviceTitle, setServiceTitle] = useState<string>('');
   const [currentPricing, setCurrentPricing] = useState<string>('');
   const [firstDatePayment, setFirstDatePayment] = useState<string>('');
   const [dueDatePayment, setDueDatePayment] = useState<string>('');
@@ -63,6 +63,7 @@ function Page(props: IProps) {
   useEffect(() => {
     const sampleCurrentPricing = '9,500원/월';
 
+    setServiceTitle('넷플릭스');
     setCurrentPricing(sampleCurrentPricing);
     setFirstDatePayment('9월 6일');
     setDueDatePayment('12월 31일');
@@ -86,7 +87,6 @@ function Page(props: IProps) {
         }}
 
         sections={[{
-          // title: `${getString('SETTING_ACCOUNT')}`,
           data: [{
             label: `${getString('SERVICE_DETAIL_SELECTED_PRICING')}`,
             option: (
@@ -162,10 +162,15 @@ function Page(props: IProps) {
       />
 
       <RegisterButton
-        testId='BTN_REGISTER'
+        testID='BTN_REGISTER'
         onClick={() => {
         }}
-        textStyle={{ color: 'white', font: 16 }}
+        textStyle={{
+          color: 'white',
+          fontSize: 16,
+          fontWeight: 'bold',
+          letterSpacing: -0.45,
+        }}
         text={getString('SERVICE_DETAIL_REGISTER')}
 
       />
@@ -174,3 +179,4 @@ function Page(props: IProps) {
 }
 
 export default Page;
+// export default createStackNavigator(routeConfig, navigatorConfig);

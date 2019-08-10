@@ -9,7 +9,7 @@ exports[`[SettingOption] should render without crashing 1`] = `
         "backgroundColor": "white",
         "display": "flex",
         "flexDirection": "row",
-        "height": 50,
+        "height": 69,
         "justifyContent": "space-between",
         "paddingBottom": 0,
         "paddingLeft": 16,
@@ -26,6 +26,7 @@ exports[`[SettingOption] should render without crashing 1`] = `
           "color": "rgb(50, 59, 67)",
           "fontSize": 16,
           "letterSpacing": -0.5,
+          "marginLeft": 24,
         },
       ]
     }

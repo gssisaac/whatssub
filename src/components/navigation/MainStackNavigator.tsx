@@ -8,6 +8,7 @@ import {
 import Main from '../screen/Main';
 import React from 'react';
 import { ScreenProps } from '../../types';
+import ServiceDetail from '../screen/ServiceDetail';
 import Setting from '../screen/Setting';
 
 const routeConfig: NavigationRouteConfigMap = {
@@ -25,10 +26,17 @@ const routeConfig: NavigationRouteConfigMap = {
     },
     path: 'setting',
   },
+  ServiceDetail: {
+    screen: ServiceDetail,
+    navigationOptions: {
+      title: 'Service Detail',
+    },
+    path: 'servicedetail',
+  },
 };
 
 const navigatorConfig: StackNavigatorConfig = {
-  initialRouteName: 'Setting',
+  initialRouteName: 'ServiceDetail',
   // header: null,
   // headerMode: 'none',
   navigationOptions: ({ navigation, screenProps }

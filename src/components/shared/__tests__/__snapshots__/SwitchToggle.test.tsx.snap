@@ -24,6 +24,7 @@ exports[`[SwitchToggle] should render without crashing 1`] = `
         "borderRadius": 10.9,
         "flexDirection": "row",
         "height": 21.7,
+        "marginRight": 21,
         "padding": 1.1,
         "width": 40,
       }
