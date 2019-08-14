@@ -41,11 +41,11 @@ const RegisterButton = styled(Button)`
   /* border-color: ${({ theme }) => theme.rosa}; */
 `;
 
-interface IProps {
+interface Props {
   navigation?: NavigationScreenProp<any, any>;
 }
 
-function Page(props: IProps) {
+function Page(props: Props) {
   const [serviceTitle, setServiceTitle] = useState<string>('');
   const [currentPricing, setCurrentPricing] = useState<string>('');
   const [firstDatePayment, setFirstDatePayment] = useState<string>('');
@@ -61,13 +61,17 @@ function Page(props: IProps) {
   };
 
   useEffect(() => {
+    const sampleTitle = '넷플릭스';
+    const sampleFirstDate = '9월 6일';
     const sampleCurrentPricing = '9,500원/월';
+    const sampleDueDatePayment = '12월 31일';
+    const sampleDaysAlarmBefore = '3일전';
 
-    setServiceTitle('넷플릭스');
+    setServiceTitle(sampleTitle);
     setCurrentPricing(sampleCurrentPricing);
-    setFirstDatePayment('9월 6일');
-    setDueDatePayment('12월 31일');
-    setDaysAlarmBefore('3일전');
+    setFirstDatePayment(sampleFirstDate);
+    setDueDatePayment(sampleDueDatePayment);
+    setDaysAlarmBefore(sampleDaysAlarmBefore);
     setServiceRate(5);
   }, []);
 
@@ -179,4 +183,3 @@ function Page(props: IProps) {
 }
 
 export default Page;
-// export default createStackNavigator(routeConfig, navigatorConfig);
